@@ -1,0 +1,27 @@
+.threestep-container {
+    display: flex;
+    height: 100vh;
+    background: green;
+}
+
+.threestep-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 33%;
+    height: 100px;
+    border: 1px solid white;
+}
+
+.button{
+    font-family: "Roboto-Regular";
+    letter-spacing: 10px;
+    padding: 10px 20px 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: #d7ebff;
+    background: #8199B1;
+    border: none;
+    cursor: default;
+}

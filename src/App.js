@@ -17,6 +17,8 @@ import NavBar from './components/NavBar';
 import Header from './components/Header';
 // APP ANIMATION
 import AppAnimation from './components/AppAnimation';
+// THREE STEP
+import ThreeStep from './components/ThreeStep';
 
 // LEAVING TO KNOW HOW TO LAZY LOAD
 // const  NavBar = React.lazy(() => import('./components/NavBar'));
@@ -36,6 +38,7 @@ function App() {
             <NavBar />
             <Header />
             <AppAnimation />
+            <ThreeStep />
           </Route>
           <Route render={() => <Redirect to={{pathname: '/'}} />} />
         </Switch>
