@@ -1,0 +1,40 @@
+.private {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.private-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 130px);
+    width: 70%;
+}
+
+.private-text {
+    width: 30%;
+    background: white;
+}
+.private-text h2 {
+    width: 100%;
+    font-family: 'Roboto-Thin';
+    font-size: 5vh;
+    margin-bottom: 10px;
+}
+.private-text p {
+    font-family: 'Roboto-ThinItalic';
+    font-size: 3vh;
+    padding-right: 10%;
+}
+
+.private-image {
+    background-image: url('../images/lock.svg');
+    height: 70%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

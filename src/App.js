@@ -19,6 +19,10 @@ import Header from './components/Header';
 import AppAnimation from './components/AppAnimation';
 // THREE STEP
 import ThreeStep from './components/ThreeStep';
+//  SAFE USE
+import SafeUse from './components/SafeUse';
+// PRIVATE
+import Private from './components/Private';
 
 // LEAVING TO KNOW HOW TO LAZY LOAD
 // const  NavBar = React.lazy(() => import('./components/NavBar'));
@@ -31,7 +35,7 @@ function App() {
     <HelmetProvider>
       <div className='App'>
       <Helmet>
-        <title>volto-organiser</title>
+        <title>photolemon</title>
       </Helmet>
         <Switch>
           <Route exact path='/'>
@@ -39,6 +43,8 @@ function App() {
             <Header />
             <AppAnimation />
             <ThreeStep />
+            <SafeUse />
+            <Private />
           </Route>
           <Route render={() => <Redirect to={{pathname: '/'}} />} />
         </Switch>

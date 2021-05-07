@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 import './AppAnimation.css';
 
+import SectionTitle from "./SectionTitle";
+
 import friends1 from '../images/friends-1.svg';
 import friends2 from '../images/friends-2.svg';
 import friends3 from '../images/friends-3.svg';
@@ -9,7 +11,6 @@ import friends4 from '../images/friends-4.svg';
 import friends5 from '../images/friends-5.svg';
 import friends6 from '../images/friends-6.svg';
 import folderDark from '../images/folder-dark.svg';
-import dataImage from '../images/data-image.svg';
 
 function AppAnimation() {
 
@@ -20,9 +21,7 @@ function AppAnimation() {
         <>
             <div className="app-animation">
                 <div className="app-animation-container">
-                    <div className="section-title">
-                        <h2>Simple Interface</h2>
-                    </div>
+                    < SectionTitle name="Simple Interface" />
                     <div className={ click ? "animation-images-container data-image" : "animation-images-container"}>
                         <div className={ click ? "image-line animate-images" : "image-line"}>
                             <img src={ friends1 } alt="friends-img-1"/>

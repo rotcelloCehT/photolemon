@@ -1,24 +1,69 @@
+.threestep{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* background: green; */
+    height: 100vh;
+}
+
 .threestep-container {
     display: flex;
-    height: 100vh;
-    background: green;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80%;
+    height: calc(100% - 130px);
+    /* background: red; */
 }
 
 .threestep-column {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    text-align: center;
     flex-grow: 1;
     width: 33%;
-    height: 100px;
-    border: 1px solid white;
+    height: 90%;
 }
 
-.button{
+.threestep-column button {
+    margin-bottom: 45px;
+
+}
+.threestep-column p {
+    font-family: "Roboto-Regular";
+    font-size: 22px;
+    margin-bottom: 45px;
+}
+.column-graphic {
+    height: 80%;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.sd {
+    background-image: url('../images/sdcard.svg');
+}
+.mouse {
+    background-image: url('../images/mouse.svg');
+}
+.clock {
+    background-image: url('../images/clock.svg');
+}
+
+
+.column-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 40px;
+    font-size: 17px;
     font-family: "Roboto-Regular";
     letter-spacing: 10px;
     padding: 10px 20px 10px 20px;
-    margin-right: 10px;
     border-radius: 5px;
     color: #d7ebff;
     background: #8199B1;

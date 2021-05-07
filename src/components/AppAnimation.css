@@ -2,6 +2,14 @@
     font-family: 'Roboto-Regular';
     src: url(../fonts/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: 'Roboto-ThinItalic';
+    src: url(../fonts/Roboto-ThinItalic.ttf);
+}
 
 .app-animation {
     display: flex;
@@ -17,19 +25,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 25px;
 }
-.section-title {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 3%;
-    font-size: 35px;
-
-    color: #323941;
-}
-
 
 .animation-images-container {
     display: flex;
@@ -39,7 +35,8 @@
 }
 .data-image {
     animation: image-grow;
-    animation-duration: 1.5s;
+    animation-delay: .4s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     background-image: url("../images/data-image.svg");
     background-size: 0%;
@@ -68,6 +65,12 @@
     display: flex;
     justify-content: center;
     width: 20%;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
 }
 .folder-line img {
     width: 100%;
@@ -75,6 +78,16 @@
 }
 .folder-line p {
     opacity: 0;
+}
+
+.animate-folders img {
+    width: 105%;
+    background-color: rgba(255,255,255,0);
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 .animate-folders p {
     animation-name: fade-in;

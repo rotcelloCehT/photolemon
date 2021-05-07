@@ -33,7 +33,7 @@ function Navbar() {
             <nav className='navbar' >
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo'>
-                        <img src={ PhotolemonIcon } alt=""/>Photolemon
+                        <img src={ PhotolemonIcon } alt=""/>Lemon
                     </Link>
                     <div className='menu-icon' onClick={ handleClick }>
                         <i className= { click ? 'fa fa-times' : 'fa fa-bars' }></i>

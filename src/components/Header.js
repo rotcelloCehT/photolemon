@@ -7,7 +7,7 @@ function Header() {
             <div className="header">
                 <div className="header-container">
                     <div className="header-text-container">
-                        <h1>P h o t o l e m o n</h1>
+                        <h1>V o l t o f o l d</h1>
                     </div>
                     <div className="header-img-container">
                         <img src={ headerImg } alt="app-display-header"/>
