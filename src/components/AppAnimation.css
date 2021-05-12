@@ -18,6 +18,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    margin-bottom: 10vh;
 }
 
 .app-animation-container {
@@ -38,7 +39,7 @@
     animation-delay: .4s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    background-image: url("../images/data-image.svg");
+    background-image: url("../images/DoneImage.svg");
     background-size: 0%;
     background-repeat: no-repeat;
 }
@@ -121,10 +122,9 @@
     position: absolute;
     bottom: 1%;
     width: 100%;
-
 }
 
-.organiser-button {
+.organise-button {
     font-family: "Roboto-Regular";
     letter-spacing: 10px;
     padding: 10px 20px 10px 20px;
@@ -134,9 +134,25 @@
     background: #8199B1;
     border: none;
 }
-.organiser-button:hover {
+.organise-button:hover {
     color: #d7ebff;
     background: #90a7be;
+}
+.organise-button.pulse {
+    animation: pulse-blue 3s infinite;
+}
+@keyframes pulse-blue {
+    0% {
+      box-shadow: 0 0 0 0 #8199B1;
+    }
+    
+    70% {
+      box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+    }
+    
+    100% {
+      box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+    }
 }
 
 

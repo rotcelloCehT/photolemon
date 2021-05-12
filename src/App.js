@@ -10,6 +10,8 @@ import {
 import React, { Suspense } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
+import AOS from 'aos';
+
 
 // NAVBAR
 import NavBar from './components/NavBar';
@@ -30,6 +32,7 @@ import Private from './components/Private';
 
 
 function App() {
+  AOS.init();
   return (
     <BrowserRouter>
     <HelmetProvider>

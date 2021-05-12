@@ -52,7 +52,7 @@ function AppAnimation() {
                         </div>
                     </div>
                     <div className="organise-container">
-                        <button className="organiser-button" onClick={ handleClick }> ORGANISE </button>
+                        <button className={ click ? "organise-button" : "organise-button pulse"} onClick={ handleClick }> ORGANISE </button>
                     </div>
                 </div>
             </div>

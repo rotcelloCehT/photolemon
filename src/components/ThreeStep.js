@@ -7,7 +7,7 @@ function ThreeStep () {
         <>
         <div className="threestep">
             < SectionTitle name="3 Step Process" />
-            <div className="threestep-container">
+            <div data-aos="fade-up" className="threestep-container">
                 <div className="threestep-column">
                     <button className="column-button"> SOURCE </button>
                     <p>Select a folder<br/>containing the images<br/>you want to organise</p>

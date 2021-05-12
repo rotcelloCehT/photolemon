@@ -24,7 +24,14 @@
     text-align: center;
     flex-grow: 1;
     width: 33%;
-    height: 90%;
+    /* height: 100%; */
+    padding-top: 50px;
+    perspective: 500px;
+    transition-duration: .5s;
+}
+.threestep-column:hover{
+    /* background: rgb(62, 73, 84, 0.1); */
+    transform: rotate(2deg);
 }
 
 .threestep-column button {
@@ -37,20 +44,25 @@
     margin-bottom: 45px;
 }
 .column-graphic {
+    min-height: 200px;
+    min-width: 200px;
     height: 80%;
     width: 80%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: top;
 }
 .sd {
     background-image: url('../images/sdcard.svg');
+    max-width: 15vw;
 }
 .mouse {
     background-image: url('../images/mouse.svg');
+    max-width: 15vw;
 }
 .clock {
     background-image: url('../images/clock.svg');
+    max-width: 15vw;
 }
 
 

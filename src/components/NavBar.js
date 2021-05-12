@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 import { Button } from './Button'
-import PhotolemonIcon from '../images/photolemon.svg'
+import PhotolemonIcon from '../images/VoltoIcon.svg'
 
 
 function Navbar() {
@@ -33,7 +33,7 @@ function Navbar() {
             <nav className='navbar' >
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo'>
-                        <img src={ PhotolemonIcon } alt=""/>Lemon
+                        <img src={ PhotolemonIcon } alt=""/>
                     </Link>
                     <div className='menu-icon' onClick={ handleClick }>
                         <i className= { click ? 'fa fa-times' : 'fa fa-bars' }></i>
